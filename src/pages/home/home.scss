@@ -1,3 +1,32 @@
 page-home {
+	$dimensions: 100px;
 
+
+	.scroll-content {
+		padding-top: 40px;
+		background-color: lightgrey;
+	}
+
+	ion-card.card-ios {
+		position: relative;
+		overflow: visible;
+
+		min-height: $dimensions;
+	}
+
+	[user-avatar] {
+		position: absolute;
+		z-index: 10;
+		width: $dimensions;
+		height: $dimensions;
+		top: -($dimensions / 2);
+		// Center position
+		left: 50%;
+		margin-left: -($dimensions / 2);
+
+		border-radius: 50%;
+		border: 3px solid black;
+
+		overflow: hidden;
+	}
 }
